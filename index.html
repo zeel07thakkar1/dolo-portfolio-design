@@ -16,19 +16,20 @@
     <title>Document</title>
 </head>
 
-<>
+<body>
 
     <div class="container-fluid">
         <div class="container py-2">
             <nav class="navbar navbar-expand-lg">
-                <div class="container-fluid">
+                <div class="container-fluid menu">
                     <a class="navbar-brand logo" href="#">
                         <i class="fa fa-user-o" aria-hidden="true"></i> DOLO
                         <i class="fa fa-th box-icon" aria-hidden="true"></i>
                     </a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
+                        <i class="fa fa-chevron-circle-down" aria-hidden="true"></i>
+
                     </button>
                     <div class="collapse navbar-collapse" id="navbarNav">
                         <ul class="navbar-nav ms-auto menu">
@@ -36,20 +37,29 @@
                                 <a class="nav-link active text-white mx-2" href="#">Home</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-white mx-2" href="#">About</a>
+                                <a class="nav-link text-white mx-2" href="#about">About</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-white mx-2" href="#">Pages</a>
+                                <a class="nav-link text-white mx-2" href="#service">Service</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-white mx-2" href="#">Blog</a>
+                                <a class="nav-link text-white mx-2" href="#skills">Skills</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-white mx-2" href="#">Gallery</a>
+                                <a class="nav-link text-white mx-2" href="#education">Education</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-white mx-2" href="#">Contact</a>
+                                <a class="nav-link text-white mx-2" href="#portfolio">Portfolio</a>
                             </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white mx-2" href="#pricing">Pricing</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white mx-2" href="#blog">Blog</a>
+                            </li>
+                            
+
+                                      
                         </ul>
                     </div>
                 </div>
@@ -80,8 +90,9 @@
             </div>
         </div>
     </div>
+    <!---------------->
 
-    <div class="container my-5 main-cont">
+    <div class="container my-5 main-cont" id="about">
         <div class="row">
 
             <div class="col-lg-6 d-flex justify-content-center align-items-center">
@@ -112,8 +123,9 @@
             </div>
         </div>
     </div>
+    <!---------------------->
 
-    <div class="container my-5 main-cont">
+    <div class="container py-3 py-md-5  main-cont" id="service">
         <div class="text-white text-center">
             <h2 class="text-oswald position-relative">What I do </h2>
 
@@ -193,14 +205,14 @@
         </div>
 
     </div>
+    <!--------------------->
 
-
-    <div class="container">
+    <div class="container py-3 py-md-5" id="skills">
         <div class="row">
             <div class="col-lg-6">
                 <h2 class="text-oswald text-white">Technical Skills</h2>
 
-                <div class="horizontal-progress p-5">
+                <div class="horizontal-progress p-3 p-md-5">
                     <div class="sub-horizontal-progress">
                         <p class="text-white mb-0">HTML / HTML5</p>
                         <div class="progress">
@@ -251,14 +263,14 @@
             <div class="col-lg-6">
                 <h2 class="text-oswald text-white">Professional Skills</h2>
 
-                <div class="row my-5">
+                <div class="row my-5 professional-row">
                     <div class="col-lg-4 d-flex justify-content-center">
                         <div class="progress-circle progress-circle1">
                             <strong>80%</strong>
                             <span>Communication</span>
                         </div>
                     </div>
-                    <div class="col-lg-4 d-flex justify-content-center">
+                    <div class="col-lg-4 col-sm-6 d-flex justify-content-center">
                         <div class="progress-circle progress-circle2">
                             <strong>60%</strong>
                             <span>Team Work</span>
@@ -272,7 +284,7 @@
                     </div>
                 </div>
 
-                <div class="row my-5">
+                <div class="row my-5 professional-row">
                     <div class="col-lg-4 d-flex justify-content-center">
                         <div class="progress-circle progress-circle4">
                             <strong>75%</strong>
@@ -290,9 +302,9 @@
             </div>
         </div>
     </div>
+    <!------------------->
 
-
-    <div class="container">
+    <div class="container py-3 py-md-5" id="education">
         <div class="row">
             <div class="col-lg-6">
                 <h2 class="text-oswald text-white">Education</h2>
@@ -363,14 +375,15 @@
             </div>
         </div>
     </div>
+    <!------------------>
 
-    <div class="container-fluid">
-        <div class="container recent-portfolio py-5">
+    <div class="container-fluid py-3 py-md-5" id="portfolio">
+        <div class="container recent-portfolio">
         <div class="text-white text-center">
             <h2 class="text-oswald position-relative">Recent Portfolio</h2>
         </div>
 
-        <ul class="text-white list-unstyled d-flex m-auto justify-content-evenly w-75 pt-5">
+        <ul class="portfolio-ul text-white list-unstyled d-flex m-auto justify-content-evenly w-75 pt-5">
             <li data-filter="all" class="current img_gallery_link">
                 <span>All Categories</span>
             </li>
@@ -429,17 +442,24 @@
             <div class="gallery_img_div position-relative mb-3 overflow-hidden branding">
                 <img src="imgs/g9.png" class="img-responsive">
             </div>
+            
+            <div class="gallery_img_div position-relative mb-3 overflow-hidden branding">
+                <img src="imgs/10.jpg" class="img-responsive">
+            </div>
+            
+            
         </div>
         </div>
     </div>
+    <!---------------->
 
-    <div class="container py-5 overflow-hidden">
+    <div class="container py-3 py-md-5 overflow-hidden" id="pricing">
         <div class="text-white text-center">
             <h2 class="text-oswald position-relative">Pricing Table</h2>
         </div>
 
         <div class="row my-5 gx-5">
-            <div class="col-md-4">
+            <div class="col-md-4 px-5 px-md-0 mb-5 mb-md-0">
                 <div class="pricing-div text-white text-center">
                     <i class="fa fa-calendar green fa-3x"></i>
                     <h4 class="mt-4">Full-time Work</h4>
@@ -453,7 +473,7 @@
                     <button class="mt-4 btn btn-transparent green ">Hire Me</button>
                 </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-4 px-5 px-md-0 mb-5 mb-md-0">
                 <div class="pricing-div text-white text-center">
                     <i class="fa fa-calendar green fa-3x"></i>
                     <h4 class="mt-4">Fixed Price Project</h4>
@@ -468,7 +488,7 @@
 
                 </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-4 px-5 px-md-0">
                 <div class="pricing-div text-white text-center">
                     <i class="fa fa-calendar green fa-3x"></i>
                     <h4 class="mt-4">Hourly Work</h4>
@@ -485,9 +505,9 @@
             </div>
         </div>
     </div>
+    <!----------------->
 
-
-    <div class="container py-5 overflow-hidden">
+    <div class="container py-3 py-md-5 overflow-hidden" id="blog">
         <div class="text-white text-center">
             <h2 class="text-oswald position-relative">Featured Posts</h2>
         </div>
